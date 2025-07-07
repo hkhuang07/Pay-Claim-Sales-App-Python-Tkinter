@@ -1,0 +1,10 @@
+Drink Order Receipt:
+Date: 2025-07-07 12:02:08
++------------------------+
+UserID:U003
+Table: Takeway
+Date: 2025-07-07 12:00:23
+TotalPrice: 0
+Status: Pending
++------------------------+
+Total: 45000 VND
