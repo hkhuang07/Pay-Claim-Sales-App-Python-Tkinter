@@ -82,8 +82,8 @@ To get this application up and running on your local machine, follow these steps
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/your-username/Pay&Claim-Sales-App-Python-Tkinter.git](https://github.com/your-username/Pay&Claim-Sales-App-Python-Tkinter.git)
-    cd Pay&Claim-Sales-App-Python-Tkinter
+    git clone [https://github.com/your-username/Pay-Claim-Sales-App-Python-Tkinter.git](https://github.com/your-username/Pay&Claim-Sales-App-Python-Tkinter.git)
+    cd Pay-Claim-Sales-App-Python-Tkinter
     ```
 2.  **Install Dependencies**: Install the required Python libraries using pip:
     ```bash
