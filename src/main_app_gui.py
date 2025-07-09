@@ -136,18 +136,18 @@ class MainWindow:
 
         # Buttons
         btnAdd = Button(self.tab_order, text="Add", command=self.btn_add_click, fg="#F0F8FF", bg="#4169E1", font=("Arial", 10, "bold"))
-        btnAdd.place(x=20, y=460, width=120, height=90)
-        btnFind = Button(self.tab_order, text="Find", command=self.btn_find_click, fg="#F0F8FF", bg="#104E8B", font=("Arial", 10, "bold"))
-        btnFind.place(x=430, y=10, width=90, height=40)
-        btnOrder = Button(self.tab_order, text="Order", command=self.btn_order_click, bg="#F0F8FF", fg="#191970", font=("Arial", 10, "bold"))
+        btnAdd.place(x=20, y=500, width=120, height=60)
+        btnFind = Button(self.tab_order, text="Find", command=self.btn_find_click, fg="#104E8B", bg="#F0F8FF", font=("Arial", 10, "bold"))
+        btnFind.place(x=420, y=10, width=70, height=30)
+        btnOrder = Button(self.tab_order, text="Order", command=self.btn_order_click,fg="#F0F8FF", bg="#191970", font=("Arial", 10, "bold"))
         btnOrder.place(x=800, y=250, width=70)
         btnDelete = Button(self.tab_order, text="Delete", command=self.btn_delete_click, fg="#F0F8FF", bg="#00688B", font=("Arial", 10, "bold"))
         btnDelete.place(x=220, y=510, width=90, height=40)
         btnCancel = Button(self.tab_order, text="Cancel", command=self.btn_cancel_click, fg="#F0F8FF", bg="#4A708B", font=("Arial", 10, "bold"))
         btnCancel.place(x=320, y=510, width=90, height=40)
-        btnPay = Button(self.tab_order, text="Pay", command=self.btn_pay_click, bg="#104E8B", fg="#F0F8FF", font=("Arial", 10, "bold"))
+        btnPay = Button(self.tab_order, text="Pay", command=self.btn_pay_click,  fg="#F0F8FF",bg="#104E8B", font=("Arial", 10, "bold"))
         btnPay.place(x=800, y=520, width=70)
-        btnRefresh = Button(self.tab_order, text="Refresh Items", command=self.refresh_items_tree, bg="#27408B", fg="#F0F8FF", font=("Arial", 10, "bold"))
+        btnRefresh = Button(self.tab_order, text="Refresh Items", command=self.refresh_items_tree,  fg="#F0F8FF",bg="#27408B", font=("Arial", 10, "bold"))
         btnRefresh.place(x=420, y=510, width=100, height=40)
 
         # Bindings are moved to __init__ for single definition
@@ -190,10 +190,10 @@ class MainWindow:
 
         if result:
             self.current_order_id = result[0][0]
-            messagebox.showinfo("Current Orders", f"Loaded pending orders for table {table_name}: OrderID {self.current_order_id}")
+            #messagebox.showinfo("Current Orders", f"Loaded pending orders for table {table_name}: OrderID {self.current_order_id}")
         else:
             self.current_order_id = None
-            messagebox.showinfo("Current Orders", f"There are no pending orders for table {table_name}. A new order will be created when a dish is added.")
+            #messagebox.showinfo("Current Orders", f"There are no pending orders for table {table_name}. A new order will be created when a dish is added.")
         
         # Cập nhật hiển thị đơn hàng và chi tiết
         self.refresh_order_and_detail_trees()
@@ -584,10 +584,10 @@ class MainWindow:
                 self.tree_items.selection_add(itemID_treeview)
                 self.tree_items.focus(itemID_treeview)
             
-            messagebox.showinfo(
+            """messagebox.showinfo(
                 "Message", f"Suitable products {len(matched_items_treeview_ids)} found!"
             )
-            # self.txt_find_item.delete(0, END) # Clear search box content after search
+            # self.txt_find_item.delete(0, END) # Clear search box content after search"""
         else:
             messagebox.showinfo(
                 "Notification", "No matching items found."

@@ -69,8 +69,8 @@ def LogInWindow(on_login_success):
     bntLogin = Button(
         loginWin,
         text="Login",
-        bg="limegreen",
-        fg="white",
+        bg="#104E8B",
+        fg="#F0F8FF",
         font=("Arial", 10, "bold"),
         command=HandleLogin,
     )
@@ -78,8 +78,8 @@ def LogInWindow(on_login_success):
     btnExit = Button(
         loginWin,
         text="Exit",
-        bg="red",
-        fg="white",
+        bg="#191970",
+        fg="#F0F8FF",
         font=("Arial", 10, "bold"),
         command=ApplicationExit,
     )
@@ -87,8 +87,8 @@ def LogInWindow(on_login_success):
     btnSignup = Button(
         loginWin,
         text="Sign up",
-        fg="black",
-        bg="yellow",
+        fg="#191970",
+        bg="#AFEEEE",
         font=("Arial", 10, "bold"),
         command=SignupWindow,
     )
@@ -96,8 +96,8 @@ def LogInWindow(on_login_success):
     btnChangePassword = Button(
         loginWin,
         text="Change Password",
-        bg="orange",
-        fg="black",
+        bg="#AFEEEE",
+        fg="#191970",
         font=("Arial", 10, "bold"),
         command=ChangePassword,
     )
@@ -138,7 +138,7 @@ def SignupWindow():
 
     txtIDSignUp = Entry(signupWin, width=23, bg="#e0f7fa")
     txtUserSignUp = Entry(signupWin, width=23, bg="#e0f7fa")
-    txtPasSignUp = Entry(signupWin, width=23, bg="#e0f7fa")
+    txtPasSignUp = Entry(signupWin, width=23, bg="#e0f7fa", show="*")
 
     txtIDSignUp.place(x=120, y=40)
     txtUserSignUp.place(x=120, y=70)
@@ -211,8 +211,8 @@ def SignupWindow():
     btnCreate = Button(
         signupWin,
         text="Create Account",
-        bg="green",
-        fg="white",
+        bg="#1874CD",
+        fg="#F0F8FF",
         font=("Arial", 12, "bold"),
         command=CreateAccount,
     )
@@ -220,8 +220,8 @@ def SignupWindow():
     btnExitSignUp = Button(
         signupWin,
         text="Exit",
-        bg="red",
-        fg="white",
+        bg="#4682B4",
+        fg="#F0F8FF",
         font=("Arial", 12, "bold"),
         command=ExitSignUp,
     )
@@ -322,8 +322,8 @@ def ChangePassword():
     btnChange = Button(
         changePassWin,
         text="Change Password",
-        bg="green",
-        fg="white",
+        bg="#AFEEEE",
+        fg="#191970",
         font=("Arial", 12, "bold"),
         command=HandleChangePassword,
     )
@@ -331,8 +331,8 @@ def ChangePassword():
     btnExit = Button(
         changePassWin,
         text="Exit",
-        bg="red",
-        fg="white",
+        bg="#AFEEEE",
+        fg="#191970",
         font=("Arial", 12, "bold"),
         command=changePassWin.destroy,
     )
