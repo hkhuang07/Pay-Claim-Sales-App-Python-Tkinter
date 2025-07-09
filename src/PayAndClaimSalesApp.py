@@ -14,7 +14,7 @@ quantityItems = 0
 revenue = 0
 orderNumber = 0
 
-    #============================================================
+#============================================================
 
 # DATABASE FUNCTION
 # Connect To Database
