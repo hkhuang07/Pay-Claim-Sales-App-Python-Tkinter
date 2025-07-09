@@ -1,5 +1,5 @@
-CREATE DATABASE Beverage;
-USE Beverage;
+CREATE DATABASE PayAndClaimSales;
+USE PayAndClaimSales;
 
 CREATE TABLE Users (
     UserID VARCHAR(50) PRIMARY KEY,
