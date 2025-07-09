@@ -4,6 +4,14 @@
 
 This repository contains a desktop application built with Python's Tkinter library, designed to manage sales and order processes for small businesses or retail environments. It provides a user-friendly graphical interface for staff to handle item orders, track sales, and manage receipts, all while integrating with a MySQL database for robust data storage and retrieval. The application includes a comprehensive authentication system to manage user access and roles.
 
+## Visualization
+<p align="center">
+<h3>Order Processing</h3>
+  <img src="demo/orders.gif" width="800" height="400">
+  <br>
+  <em>Processing Order from select product to payment.</em>
+</p>
+
 ## Features
 
 * **User Authentication**: Secure login, new user registration, and password change functionalities with `bcrypt` for password hashing.
@@ -16,7 +24,19 @@ This repository contains a desktop application built with Python's Tkinter libra
 * **Database Integration**: Seamless connection and interaction with a MySQL database for all application data (users, items, orders, order details).
 * **User Interface**: Intuitive and responsive UI built with Tkinter, ensuring a smooth user experience.
 * **Role-Based Access**: Supports different user roles (e.g., Admin, Employee) to manage permissions.
+<p align="center">
+<h3>Items Settings</h3>
+  <img src="demo/item_settings" width="800" height="400">
+  <br>
+  <em>Add/Update and Delete Items</em>
+</p>
 
+<p align="center">
+<h3>Search</h3>
+  <img src="demo/search_exit.gif" width="800" height="400">
+  <br>
+  <em>Search Items</em>
+</p>
 ## Technologies Used
 
 * **Python 3.x**: The core programming language.
@@ -105,6 +125,13 @@ Execute the `main_app.py` file to start the application:
 python main_app.py
 ```
 ### 4.Usage
+<p align="center">
+<h3>Authentication</h3>
+  <img src="demo/signin_login.gif" width="800" height="400">
+  <br>
+  <em>Sign in & Log in - Use Bcrypt to hash password</em>
+</p>
+
 1.  Login Screen: The application will first present a login window. You can log in with existing credentials, sign up for a new account, or change your password.
    Sign Up: Create a new user account, specifying a UserID, Username, Password, and Role (Admin/Employee).
    Login: Enter your Username and Password to access the main application.
