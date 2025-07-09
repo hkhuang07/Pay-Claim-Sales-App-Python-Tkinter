@@ -32,7 +32,7 @@ This repository hosts a desktop application built with Python's Tkinter library,
 
 <p align="center">
   <h3>Effortless Item Management 🛠️</h3>
-  <img src="demo/item_settings.png" width="800" height="400">
+  <img src="demo/item_settings.gif" width="800" height="400">
   <br>
   <em>Quickly add, update, and delete inventory items.</em>
 </p>
