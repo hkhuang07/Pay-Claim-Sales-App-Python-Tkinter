@@ -1,6 +1,3 @@
-
-Here's the English version of your README.md file, incorporating the requested enhancements, icons, and improved structure, along with the updated instructions for running src/main.py.
-
 # ✨ Pay&Claim-Sales-App-Python-Tkinter ✨
 
 <p align="center">
