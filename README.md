@@ -102,7 +102,7 @@ To get this application up and running on your local machine, follow these compr
         Tables VARCHAR(50),
         OrderDate DATETIME,
         TotalAmount DECIMAL(10, 2),
-        Status VARCHAR(50), -- e.g., 'Pending', 'Completed', 'Cancelled'
+        Status VARCHAR(50), -- e.g., 'Pending', 'Completed', 'Cancelled','Paid'
         FOREIGN KEY (UserID) REFERENCES Users(UserID)
     );
 
